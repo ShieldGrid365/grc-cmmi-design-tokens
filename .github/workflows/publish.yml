@@ -1,0 +1,39 @@
+name: Publish to npm
+
+# Publica el paquete cuando creas un GitHub Release (o manualmente desde la pestaña Actions).
+# Usa Trusted Publishing (OIDC): no requiere NPM_TOKEN ni OTP.
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write # ← requerido por OIDC para que npm confíe en este workflow
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: https://registry.npmjs.org
+
+      # Trusted Publishing requiere npm >= 11.5.1
+      - name: Upgrade npm
+        run: npm install -g npm@latest
+
+      - name: Install deps
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm build
+
+      # Sin NODE_AUTH_TOKEN: el OIDC del workflow autentica. Provenance se genera automáticamente.
+      - name: Publish
+        run: npm publish --access public
