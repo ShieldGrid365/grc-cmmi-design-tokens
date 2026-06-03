@@ -1,0 +1,36 @@
+{
+  "name": "@shieldgrid365/design-tokens",
+  "version": "1.0.0",
+  "description": "Design tokens (CSS variables + JS color helpers) de ShieldGrid365. Framework-agnostic, cero runtime.",
+  "type": "module",
+  "license": "MIT",
+  "sideEffects": [
+    "*.css"
+  ],
+  "files": [
+    "dist",
+    "theme.css",
+    "fonts.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./theme.css": "./theme.css",
+    "./fonts.css": "./fonts.css"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "prepublishOnly": "pnpm build"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.2.8",
+    "@fontsource-variable/plus-jakarta-sans": "^5.2.8"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  },
+  "packageManager": "pnpm@11.5.0"
+}

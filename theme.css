@@ -1,0 +1,235 @@
+:root {
+  --font-body:    'Inter Variable', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  --font-heading: 'Plus Jakarta Sans Variable', 'Inter Variable', system-ui, -apple-system, sans-serif;
+}
+
+:root,
+[data-theme="dark"] {
+  color-scheme: dark;
+  --logo-filter: none;
+  --logo-fill: white;
+  --logo-gradient-start: white;
+  --logo-gradient-mid:   white;
+  --logo-gradient-end:   white;
+  --color-bg: rgb(13, 16, 25);
+  --color-bg-surface: rgb(18, 22, 34);
+  --color-bg-elevated: rgb(24, 29, 44);
+  --color-bg-hover: rgba(99, 102, 241, 0.08);
+
+  --color-border: rgba(255, 255, 255, 0.07);
+  --color-border-active: rgba(99, 102, 241, 0.4);
+
+  --color-indigo: rgb(99, 102, 241);
+  --color-indigo-muted: rgba(99, 102, 241, 0.25);
+  --color-indigo-glow: rgba(99, 102, 241, 0.15);
+  --color-indigo-light:  rgba(99, 102, 241, 0.12);
+  --color-indigo-border: rgba(99, 102, 241, 0.3);
+
+  --color-green: rgb(63, 185, 80);
+  --color-green-muted: rgba(63, 185, 80, 0.15);
+  --color-green-light:  rgba(63, 185, 80, 0.10);
+  --color-green-border: rgba(63, 185, 80, 0.25);
+  --color-amber: rgb(227, 179, 65);
+  --color-amber-muted: rgba(227, 179, 65, 0.15);
+  --color-amber-light:  rgba(227, 179, 65, 0.10);
+  --color-amber-border: rgba(227, 179, 65, 0.25);
+  --color-red: rgb(248, 81, 73);
+  --color-red-muted: rgba(248, 81, 73, 0.25);
+  --color-red-light:  rgba(248, 81, 73, 0.10);
+  --color-red-border: rgba(248, 81, 73, 0.25);
+  --color-blue: rgb(88, 166, 255);
+  --color-blue-muted: rgba(88, 166, 255, 0.15);
+  --color-blue-light:  rgba(88, 166, 255, 0.10);
+  --color-blue-border: rgba(88, 166, 255, 0.25);
+  --color-orange: rgb(240, 136, 62);
+  --color-orange-light:  rgba(240, 136, 62, 0.10);
+  --color-orange-border: rgba(240, 136, 62, 0.25);
+  --color-violet: rgb(139, 92, 246);
+  --color-violet-light:  rgba(139, 92, 246, 0.10);
+  --color-violet-border: rgba(139, 92, 246, 0.30);
+
+  --color-text-primary: rgba(255, 255, 255, 0.95);
+  --color-text-secondary: rgba(255, 255, 255, 0.55);
+  --color-text-muted: rgba(255, 255, 255, 0.45);
+
+  --color-overlay: rgba(0, 0, 0, 0.65);
+  --shadow-panel: 0 25px 60px rgba(0, 0, 0, 0.55);
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --logo-filter: invert(1) hue-rotate(180deg);
+  --logo-fill: linear-gradient(135deg, rgb(99, 102, 241), rgb(79, 70, 229) 55%, rgb(67, 56, 202));
+  --logo-gradient-start: rgb(99, 102, 241);
+  --logo-gradient-mid:   rgb(79, 70, 229);
+  --logo-gradient-end:   rgb(67, 56, 202);
+  --color-bg: rgb(248, 250, 252);
+  --color-bg-surface: rgb(255, 255, 255);
+  --color-bg-elevated: rgb(241, 245, 249);
+  --color-bg-hover: rgba(99, 102, 241, 0.06);
+
+  --color-border: rgba(15, 23, 42, 0.08);
+  --color-border-active: rgba(99, 102, 241, 0.45);
+
+  --color-indigo: rgb(79, 70, 229);
+  --color-indigo-muted: rgba(79, 70, 229, 0.12);
+  --color-indigo-glow: rgba(99, 102, 241, 0.1);
+  --color-indigo-light:  rgba(79, 70, 229, 0.08);
+  --color-indigo-border: rgba(79, 70, 229, 0.22);
+
+  --color-green: rgb(22, 163, 74);
+  --color-green-muted: rgba(22, 163, 74, 0.12);
+  --color-green-light:  rgba(22, 163, 74, 0.10);
+  --color-green-border: rgba(22, 163, 74, 0.25);
+  --color-amber: rgb(217, 119, 6);
+  --color-amber-muted: rgba(217, 119, 6, 0.12);
+  --color-amber-light:  rgba(217, 119, 6, 0.10);
+  --color-amber-border: rgba(217, 119, 6, 0.25);
+  --color-red: rgb(220, 38, 38);
+  --color-red-muted: rgba(220, 38, 38, 0.18);
+  --color-red-light:  rgba(220, 38, 38, 0.10);
+  --color-red-border: rgba(220, 38, 38, 0.25);
+  --color-blue: rgb(37, 99, 235);
+  --color-blue-muted: rgba(37, 99, 235, 0.12);
+  --color-blue-light:  rgba(37, 99, 235, 0.08);
+  --color-blue-border: rgba(37, 99, 235, 0.22);
+  --color-orange: rgb(234, 88, 12);
+  --color-orange-light:  rgba(234, 88, 12, 0.10);
+  --color-orange-border: rgba(234, 88, 12, 0.25);
+  --color-violet: rgb(124, 58, 237);
+  --color-violet-light:  rgba(124, 58, 237, 0.08);
+  --color-violet-border: rgba(124, 58, 237, 0.25);
+
+  --color-text-primary: rgba(15, 23, 42, 0.95);
+  --color-text-secondary: rgba(15, 23, 42, 0.65);
+  --color-text-muted: rgba(15, 23, 42, 0.45);
+
+  --color-overlay: rgba(15, 23, 42, 0.45);
+  --shadow-panel: 0 18px 40px rgba(15, 23, 42, 0.12);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body,
+#root {
+  height: 100%;
+  background-color: var(--color-bg);
+}
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+h1, h2, h3, h4, h5, h6,
+.font-heading {
+  font-family: var(--font-heading);
+  letter-spacing: -0.01em;
+}
+html {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(99, 102, 241, 0.4) var(--color-bg-elevated);
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg-elevated);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(99, 102, 241, 0.4);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.65);
+}
+
+/* Fix autofill — variante OSCURA */
+[data-theme="dark"] input:-webkit-autofill,
+[data-theme="dark"] input:-webkit-autofill:hover,
+[data-theme="dark"] input:-webkit-autofill:focus,
+[data-theme="dark"] input:-webkit-autofill:active,
+[data-theme="dark"] textarea:-webkit-autofill,
+[data-theme="dark"] textarea:-webkit-autofill:hover,
+[data-theme="dark"] textarea:-webkit-autofill:focus,
+[data-theme="dark"] select:-webkit-autofill,
+[data-theme="dark"] select:-webkit-autofill:hover,
+[data-theme="dark"] select:-webkit-autofill:focus {
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.95) !important;
+  -webkit-box-shadow: 0 0 0 1000px rgb(24, 29, 44) inset !important;
+  box-shadow: 0 0 0 1000px rgb(24, 29, 44) inset !important;
+  caret-color: rgba(255, 255, 255, 0.95) !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+[data-theme="dark"] input:autofill,
+[data-theme="dark"] textarea:autofill,
+[data-theme="dark"] select:autofill {
+  background-color: rgb(24, 29, 44) !important;
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Fix autofill — variante CLARA */
+[data-theme="light"] input:-webkit-autofill,
+[data-theme="light"] input:-webkit-autofill:hover,
+[data-theme="light"] input:-webkit-autofill:focus,
+[data-theme="light"] input:-webkit-autofill:active,
+[data-theme="light"] textarea:-webkit-autofill,
+[data-theme="light"] textarea:-webkit-autofill:hover,
+[data-theme="light"] textarea:-webkit-autofill:focus,
+[data-theme="light"] select:-webkit-autofill,
+[data-theme="light"] select:-webkit-autofill:hover,
+[data-theme="light"] select:-webkit-autofill:focus {
+  -webkit-text-fill-color: rgba(15, 23, 42, 0.95) !important;
+  -webkit-box-shadow: 0 0 0 1000px rgb(241, 245, 249) inset !important;
+  box-shadow: 0 0 0 1000px rgb(241, 245, 249) inset !important;
+  caret-color: rgba(15, 23, 42, 0.95) !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+[data-theme="light"] input:autofill,
+[data-theme="light"] textarea:autofill,
+[data-theme="light"] select:autofill {
+  background-color: rgb(241, 245, 249) !important;
+  color: rgba(15, 23, 42, 0.95) !important;
+}
+
+/* Utilidad: logo que invierte color en modo claro */
+.themed-logo {
+  filter: var(--logo-filter);
+}
+
+/* Toast — colores semánticos por tipo ─────────────────────────────────────── */
+[data-type="error"]   [role="status"] { border-color: var(--color-red)    !important; }
+[data-type="success"] [role="status"] { border-color: var(--color-green)  !important; }
+[data-type="warning"] [role="status"] { border-color: var(--color-amber)  !important; }
+[data-type="info"]    [role="status"] { border-color: var(--color-blue)   !important; }
+[data-type="loading"] [role="status"] { border-color: var(--color-indigo) !important; }
+
+/* El DefaultToastContent usa align-items:flex-start; lo centramos verticalmente */
+[data-type] [role="status"] ._fd-row { align-items: center !important; }
+
+/* Quita el outline negro feo del navegador en inputs/textareas/selects/buttons */
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+input:focus,
+input:focus-visible,
+textarea:focus,
+textarea:focus-visible,
+select:focus,
+select:focus-visible {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}

@@ -1,0 +1,5 @@
+/* Fuentes variables del design system de ShieldGrid365.
+ * Importa este archivo (o instala/importa los paquetes @fontsource-variable/*
+ * por tu cuenta) para que --font-body / --font-heading de theme.css resuelvan. */
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/plus-jakarta-sans';
