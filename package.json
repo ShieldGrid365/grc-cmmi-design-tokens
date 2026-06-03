@@ -4,6 +4,23 @@
   "description": "Design tokens (CSS variables + JS color helpers) de ShieldGrid365. Framework-agnostic, cero runtime.",
   "type": "module",
   "license": "MIT",
+  "author": "NuTech Corp",
+  "keywords": [
+    "design-tokens",
+    "css-variables",
+    "theme",
+    "dark-mode",
+    "design-system"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShieldGrid365/grc-cmmi-design-tokens.git"
+  },
+  "homepage": "https://github.com/ShieldGrid365/grc-cmmi-design-tokens#readme",
+  "bugs": "https://github.com/ShieldGrid365/grc-cmmi-design-tokens/issues",
+  "publishConfig": {
+    "access": "public"
+  },
   "sideEffects": [
     "*.css"
   ],
