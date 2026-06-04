@@ -23,7 +23,18 @@
   --color-border: rgba(255, 255, 255, 0.07);
   --color-border-active: rgba(99, 102, 241, 0.4);
 
-  --color-indigo: rgb(99, 102, 241);
+  --color-indigo-50: oklch(0.958 0.019 282.83);
+  --color-indigo-100: oklch(0.915 0.038 285.66);
+  --color-indigo-200: oklch(0.832 0.078 283.78);
+  --color-indigo-300: oklch(0.748 0.12 282.58);
+  --color-indigo-400: oklch(0.667 0.163 280.24);
+  --color-indigo-500: oklch(0.585 0.204 277.12);
+  --color-indigo-600: oklch(0.505 0.244 272.22);
+  --color-indigo-700: oklch(0.421 0.244 268.01);
+  --color-indigo-800: oklch(0.329 0.19 268.01);
+  --color-indigo-900: oklch(0.238 0.138 267.96);
+  --color-indigo-950: oklch(0.187 0.108 268.05);
+  --color-indigo: var(--color-indigo-500);
   --color-indigo-muted: rgba(99, 102, 241, 0.25);
   --color-indigo-glow: rgba(99, 102, 241, 0.15);
   --color-indigo-light: rgba(99, 102, 241, 0.12);
