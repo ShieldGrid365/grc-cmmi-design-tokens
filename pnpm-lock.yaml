@@ -14,9 +14,6 @@ importers:
       '@fontsource-variable/plus-jakarta-sans':
         specifier: ^5.2.8
         version: 5.2.8
-      '@shieldgrid365/design-tokens':
-        specifier: ^1.0.1
-        version: 1.0.1
     devDependencies:
       tsup:
         specifier: ^8.5.1
@@ -499,9 +496,6 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@shieldgrid365/design-tokens@1.0.1':
-    resolution: {integrity: sha512-6tkS5tGc6UogXT+U8lrnmwayGE37Ew/JTwd8YUPkUynmPN+apJ6j5Ycaou/iJ4qKlwqH+XyqAqsVrXKErY/IKQ==}
-
   '@types/estree@1.0.9':
     resolution: {integrity: sha512-GhdPgy1el4/ImP05X05Uw4cw2/M93BCUmnEvWZNStlCzEKME4Fkk+YpoA5OiHNQmoS7Cafb8Xa3Pya8m1Qrzeg==}
 
@@ -965,11 +959,6 @@ snapshots:
 
   '@rollup/rollup-win32-x64-msvc@4.61.1':
     optional: true
-
-  '@shieldgrid365/design-tokens@1.0.1':
-    dependencies:
-      '@fontsource-variable/inter': 5.2.8
-      '@fontsource-variable/plus-jakarta-sans': 5.2.8
 
   '@types/estree@1.0.9': {}
 
