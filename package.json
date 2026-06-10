@@ -1,6 +1,6 @@
 {
   "name": "@shieldgrid365/design-tokens",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Design tokens (CSS variables + JS color helpers) de ShieldGrid365. Framework-agnostic, cero runtime.",
   "type": "module",
   "license": "MIT",
